@@ -1,6 +1,6 @@
 # Node-TypeScript-Restify-Mongoose
 
-This is a demo node.js application written in TypeScript demonstrating how to build a RESTful API
+This is a demo Node.js application written in TypeScript demonstrating how to build a RESTful API
 with Restify and MongoDB for the backend.
 
 Inspired by:
