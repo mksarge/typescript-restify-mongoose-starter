@@ -19,23 +19,7 @@ $ git clone git://github.com/mksarge/node-ts-restify-mongoose-demo.git
 $ npm install
 ```
 
-**NOTE:** Do not forget to set the github `CLIENT_ID`s and `SECRET`s. In `development` env, you can set the env variables by doing
-
-```sh
-cp .env.example .env
-```
-
-and replace the values there. In `production` env, it is not safe to keep the ids and secrets in a file, so you need to set it up via commandline. If you are using heroku checkout how environment variables are set [here](https://devcenter.heroku.com/articles/config-vars).
-
-then
-
-```sh
-$ npm start
-```
-
-Then visit [http://localhost:3000/](http://localhost:3000/)
-
-## Tests
+## Test
 
 The test command first lints, then builds the project before running Mocha tests.
 
@@ -45,7 +29,18 @@ $ npm run test
 
 // run tests with logger enabled
 $ npm run test:debug
+
+// run tests with instanbul coverage
+$ npm run cover
 ```
+
+## Run
+
+```sh
+$ npm start
+```
+
+Then visit [http://localhost:5000/](http://localhost:5000/)
 
 ## License
 
