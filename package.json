@@ -1,0 +1,37 @@
+{
+  "name": "classportal-api",
+  "description": "classportal api",
+  "version": "1.0.0",
+  "author": "michael sargent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ubccpsc/classportal-api"
+  },
+  "dependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.35",
+    "@types/mongoose": "^4.7.2",
+    "@types/restify": "^2.0.36",
+    "@types/sinon": "^1.16.34",
+    "@types/supertest": "^2.0.0",
+    "mongoose": "^4.7.5",
+    "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "supertest": "^2.0.0",
+    "tslint": "^4.2.0",
+    "tslint-eslint-rules": "^3.2.3",
+    "typescript": "^2.1.4"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "build": "npm run lint; node_modules/.bin/tsc",
+    "test": "npm run build; NODE_ENV='test' node_modules/.bin/_mocha test/**/*.spec.js",
+    "test:debug": "npm run build; NODE_ENV='test' DEBUG=true node_modules/.bin/_mocha test/**/*.spec.js",
+    "cover": "NODE_ENV='test' istanbul cover node_modules/.bin/_mocha test/**/*.spec.js",
+    "start": "npm run build; node server.js"
+  }
+}

@@ -1,0 +1,24 @@
+# Webstorm editor configuration
+.idea/
+
+# VS Code editor configuration
+.vscode/
+
+# Dependency directory
+node_modules
+
+# Coverage directory
+coverage/
+
+# Logs
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# TypeScript compiled files
+**/*.js
+**/*.map
