@@ -1,4 +1,4 @@
-# TypeScript Restify Mongoose Starter
+# TypeScript Restify Mongoose Starter [![Build Status](https://travis-ci.org/mksarge/typescript-restify-mongoose-starter.svg?branch=master)](https://travis-ci.org/mksarge/typescript-restify-mongoose-starter)
 
 Node.js boilerplate application demonstrating how to build a REST API with
 [TypeScript][ts], [Restify][restify], and [Mongoose][mongoose].
