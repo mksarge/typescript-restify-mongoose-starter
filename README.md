@@ -27,8 +27,9 @@ npm run start
 
 ## License
 
-MIT
+[MIT][license]
 
 [ts]: <https://www.typescriptlang.org/>
 [restify]: <http://restify.com/>
 [mongoose]: <http://mongoosejs.com/>
+[license]: <https://github.com/mksarge/typescript-restify-mongoose-starter/blob/master/LICENSE.txt>
