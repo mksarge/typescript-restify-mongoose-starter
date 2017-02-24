@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.16",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "sinon": "^1.17.7",
@@ -30,9 +31,8 @@
   "scripts": {
     "lint": "tslint --project .",
     "build": "node_modules/.bin/tsc",
-    "test": "npm run build && NODE_ENV='test' node_modules/.bin/_mocha test/**/*.spec.js",
-    "test:debug": "npm run build && NODE_ENV='test' DEBUG=true node_modules/.bin/_mocha test/**/*.spec.js",
-    "cover": "NODE_ENV='test' node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/**/*.spec.js",
+    "test": "npm run build && NODE_ENV='test' node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test/**/*.spec.js",
+    "cover": "npm run test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "start": "npm run build && node server.js"
   }
 }
